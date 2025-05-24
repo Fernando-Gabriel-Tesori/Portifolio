@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Fernando Tesori | Desenvolvedor Full Stack</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Início</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>Sobre</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Serviços</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Projetos</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contato</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Olá! Eu sou <span class="stylized-name">Fernando Tesori</span></h1>
+                        <h2>Desenvolvedor <span class="proffesions">Web Full Stack</span></h2>
+                        <p class="heroline">Especializado em criar aplicações modernas, performáticas e com código limpo
+                            usando o ecossistema JavaScript.</p>
+                        <div class="buttonGroup">
+                            <button>Me Contrate</button>
+                            <button>Fale Comigo</button>
+                        </div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1" />
+                            <hr class="hr2" />
+                        </div>
+                        <img src="assets/perfil.png" alt="Foto Fernando" />
+                        <div class="bottom-left-corner">
+                            <hr class="hr1" />
+                            <hr class="hr2" />
+                        </div>
+                    </div>
+                    <p class="slide-help">Role para o próximo slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">Sobre mim</h1>
+                        <h3 class="sub-heading">Sou <span class="proffesions">Desenvolvedor Web Full Stack</span></h3>
+                        <p class="aboutme-deatils">
+                            Formado pelo Dev Club com Rodolfo Mori, tenho experiência prática em projetos reais
+                            utilizando tecnologias como React, Node.js, TypeScript, MongoDB e muito mais. Gosto de
+                            transformar ideias em soluções digitais impactantes.
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Formação:</span> Dev Club - Rodolfo Mori</li>
+                                <li><span>País:</span> Brasil</li>
+                                <li><span>Disponibilidade:</span> Freelancer</li>
+                                <li><span>Idade:</span> 20</li>
+                                <li><span>Telefone:</span> (46) 99928-2899</li>
+                                <li><span>Especialidade:</span> JavaScript, React, Node.js</li>
+                                <li><span>Experiência:</span> 1 ano e 2 mês</li>
+                                <div class="buttonGroup">
+                                    <button>Me Contrate</button>
+                                    <button>Fale Comigo</button>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <li>
+                                    <p>React</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:95%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Node.js</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>MongoDB</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>TypeScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:85%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS/Styled</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:75%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services">
+                    <h1 class="heading">Serviços</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h2>Desenvolvimento Web</h2>
+                        <p>Criação de aplicações completas com React, Node.js, MongoDB e TypeScript.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-mobile"></i></div>
+                        <h2>Responsividade</h2>
+                        <p>Interfaces otimizadas para todos os dispositivos, com foco em UX e performance.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h2>Autenticação Segura</h2>
+                        <p>Integração com OAuth, JWT e práticas modernas de segurança.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h2>APIs e Banco de Dados</h2>
+                        <p>Construção de APIs RESTful e bancos relacionais ou NoSQL como MongoDB e PostgreSQL.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h2>Melhores Práticas</h2>
+                        <p>Clean Code, testes e CI/CD fazem parte do meu fluxo de desenvolvimento.</p>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h2>Aprendizado Rápido</h2>
+                        <p>Assimilo e aplico novos conceitos com agilidade, acelerando entregas e evolução contínua.</p>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Projetos</h1>
+                    <div class="project"><img src="assets/projeto1.png" alt="Projeto 1" /></div>
+                    <div class="project"><img src="assets/projeto2.png" alt="Projeto 2" /></div>
+                    <div class="project"><img src="assets/projeto3.png" alt="Projeto 3" /></div>
+                    <div class="project"><img src="assets/projeto4.png" alt="Projeto 4" /></div>
+                    <div class="project"><img src="assets/projeto5.png" alt="Projeto 5" /></div>
+                    <div class="project"><img src="assets/projeto6.png" alt="Projeto 6" /></div>
+                </div>
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contato</h1>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Telefone <span>WhatsApp</span></h3>
+                        <p>(46) 99928-2899</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Localização</h3>
+                        <p>Paraná, Brasil</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>fernandotesori.dev@gmail.com</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                        <h3>Segundo Email</h3>
+                        <p>ftesorie123@gmail.com</p>
+                    </div>
+                    <form>
+                        <div class="contact-section">
+                            <h1>Quer me conhecer?</h1>
+                            <p>Me chame no e-mail </p>
+                            <p> Vamos conversar no WhatsApp </p>
+                            <p>Entre em contato!</p>
+                        </div>
+
+                    </form>
+                    <footer>
+                        <li>© 2025 Fernando Tesori. Todos os direitos reservados.</li>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
