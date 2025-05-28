@@ -1,4 +1,4 @@
-// Inicialização do Swiper com efeito Cube
+
 const swiper = new Swiper(".swiper", {
     effect: "cube",
     allowTouchMove: false,
@@ -12,12 +12,10 @@ const swiper = new Swiper(".swiper", {
     mousewheel: true,
 });
 
-// Função customizada para movimentação (log de debug)
 swiper.sliderMove = function (start, end) {
     console.log(start);
 };
 
-// Navega para o slide e ativa o item de navegação correspondente
 function Navigate(index) {
     const links = document.querySelectorAll(".Links li");
 
