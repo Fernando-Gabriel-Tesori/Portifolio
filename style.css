@@ -810,3 +810,8 @@ form h2 .SocialLinks i:hover{
         width: 100%;
     }
 }
+html, body {
+  overflow: hidden;
+  height: 100%;
+  touch-action: pan-y; /* permite rolagem vertical dentro de inputs se necessário */
+}
