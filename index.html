@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script defer src="main.js"></script>
+    <script defer src="script.js"></script>
     <title>Fernando Tesori | Desenvolvedor Full Stack</title>
 </head>
 
@@ -42,8 +43,23 @@
                         <p class="heroline">Especializado em criar aplicações modernas, performáticas e com código limpo
                             usando o ecossistema JavaScript.</p>
                         <div class="buttonGroup">
-                            <button>Me Contrate</button>
-                            <button>Fale Comigo</button>
+                            <!-- Botões com links reais -->
+                            <button class="redirect-btn" data-link="https://w.app/yria4t">Me Contrate</button>
+                            <button class="redirect-btn" data-link="https://w.app/tkns9e">Fale Comigo</button>
+
+                            <script>
+                                // Seleciona todos os botões com a classe .redirect-btn
+                                const botoes = document.querySelectorAll(".redirect-btn");
+
+                                botoes.forEach(botao => {
+                                    botao.addEventListener("click", () => {
+                                        const link = botao.getAttribute("data-link");
+                                        window.open(link, "_blank"); // Abre o link em uma nova aba
+                                        // ou use: window.location.href = link; para abrir na mesma aba
+                                    });
+                                });
+                            </script>
+
                         </div>
                     </div>
                     <div class="SideImg">
