@@ -1,7 +1,7 @@
 let swiper;
 
 function initSwiper() {
-  if (window.innerWidth <= 768) { // Mobile
+  if (window.innerWidth <= 768) { 
     swiper = new Swiper(".swiper", {
       direction: "horizontal",
       loop: false,
@@ -13,7 +13,7 @@ function initSwiper() {
       touchAngle: 45,
       grabCursor: true,
     });
-  } else { // Desktop
+  } else { 
     swiper = new Swiper(".swiper", {
       effect: "cube",
       allowTouchMove: false,
@@ -33,10 +33,9 @@ function initSwiper() {
   }
 }
 
-// Inicializa o swiper ao carregar a página
 window.addEventListener("load", initSwiper);
 
-// Opcional: reinicializar ao redimensionar a janela para adaptar
+
 window.addEventListener("resize", () => {
   if (swiper) {
     swiper.destroy(true, true);
@@ -44,7 +43,6 @@ window.addEventListener("resize", () => {
   initSwiper();
 });
 
-// Função Navigate continua a mesma:
 function Navigate(index) {
   const links = document.querySelectorAll(".Links li");
 
